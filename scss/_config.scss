@@ -1,5 +1,5 @@
 $primary-colour: #333;
-$secondary-colour: #007;
+$secondary-colour: #33aaee;
 $show-home-image: true;
 $home-image: url("../img/background.jpg");
 $background-opacity: 0.75;
@@ -26,6 +26,15 @@ $background-opacity: 0.75;
         z-index: -1;
       }
     }
+  }
+}
+
+//set text colour
+@function set-text-colour($colour) {
+  @if (lightness($colour) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
   }
 }
 
