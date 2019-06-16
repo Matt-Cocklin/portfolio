@@ -172,6 +172,28 @@ main {
   color: #fff;
 }
 
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+
+  div {
+    font-size: 2rem;
+    border: solid #fff 1px;
+    padding: 1rem;
+    @include easeOut;
+
+    &:hover {
+      transform: scale(0.95);
+      background: $secondary-colour;
+      color: set-text-colour($secondary-colour);
+      span {
+        color: set-text-colour($secondary-colour);
+      }
+    }
+  }
+}
+
 /* Expand grids for larger screens */
 
 @media (min-width: $breakpoint-phone) {

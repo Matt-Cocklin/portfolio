@@ -38,6 +38,8 @@
     width: 50%;
     height: 100vh;
     overflow: hidden; }
+  .menu-branding p {
+    margin: 1rem; }
   .menu-nav {
     margin: 0;
     padding: 0;
@@ -228,6 +230,22 @@ main {
 .btn-dark {
   background: #000;
   color: #fff; }
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: solid #fff 1px;
+    padding: 1rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      transform: scale(0.95);
+      background: #33aaee;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
 
 /* Expand grids for larger screens */
 @media (min-width: 600px) {
