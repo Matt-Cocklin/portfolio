@@ -3,9 +3,10 @@ $secondary-colour: #33aaee;
 $show-home-image: true;
 $home-image: url("../img/background.jpg");
 $background-opacity: 0.75;
-$breakpoint-phone: 500px;
-$breakpoint-tablet: 768px;
-$breakpoint-desktop: 1000px;
+$breakpoint-phone: 600px;
+$breakpoint-tablet: 900px;
+$breakpoint-desktop: 1200px;
+$breakpoint-extraLarge: 1500px;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;

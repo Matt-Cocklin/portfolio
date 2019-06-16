@@ -230,7 +230,7 @@ main {
   color: #fff; }
 
 /* Expand grids for larger screens */
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .about-info {
     grid-template-areas: "bio-image bio bio" "job1 job2 job3";
     grid-template-columns: repeat(3, 1fr); }
@@ -239,10 +239,14 @@ main {
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
+
+@media (min-width: 1500px) {
+  .projects {
+    grid-template-columns: repeat(5, 1fr); } }

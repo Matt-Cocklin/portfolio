@@ -202,3 +202,9 @@ main {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+@media (min-width: $breakpoint-extraLarge) {
+  .projects {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
