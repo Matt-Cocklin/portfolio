@@ -1,8 +1,12 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Responsive portfolio site",
+  "description": "Portfolio site",
   "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
@@ -15,8 +19,5 @@
   "bugs": {
     "url": "https://github.com/matt-cocklin/portfolio/issues"
   },
-  "homepage": "https://github.com/matt-cocklin/portfolio#readme",
-  "dependencies": {
-    "node-sass": "^4.12.0"
-  }
+  "homepage": "https://github.com/matt-cocklin/portfolio#readme"
 }
