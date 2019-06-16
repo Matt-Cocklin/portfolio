@@ -179,7 +179,7 @@ main {
 
 .boxes {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 1rem;
 
   div {
@@ -188,6 +188,7 @@ main {
     padding: 1rem;
     border-radius: 15px;
     @include easeOut;
+    font-size: 1.5rem;
 
     &:hover {
       transform: scale(0.95);

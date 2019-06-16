@@ -1,3 +1,9 @@
+.home-btn {
+  position: absolute;
+  z-index: 3;
+  top: 30px;
+  right: 80px; }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -237,14 +243,15 @@ main {
 
 .boxes {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 1rem; }
   .boxes div {
     font-size: 2rem;
     border: solid #fff 1px;
     padding: 1rem;
     border-radius: 15px;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-out;
+    font-size: 1.5rem; }
     .boxes div:hover {
       transform: scale(0.95);
       background: #33aaee;
