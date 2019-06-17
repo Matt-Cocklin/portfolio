@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "modal";
 
 * {
   box-sizing: border-box;
@@ -145,6 +146,7 @@ main {
     &:hover {
       opacity: 0.5;
       border-color: $secondary-colour;
+      cursor: pointer;
       @include easeOut;
     }
   }

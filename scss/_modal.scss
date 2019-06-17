@@ -1,0 +1,49 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-clip: rgba(0, 0, 0, 0.5);
+
+  &-content {
+    background-color: #f4f4f4;
+    color: $primary-colour;
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.25),
+      0 15px 20px 0 rgba(0, 0, 0, 0.17);
+    border-radius: 25px;
+    animation-name: modalOpen;
+    animation-duration: 1s;
+  }
+
+  .closeBtn {
+    color: #ccc;
+    float: right;
+    font-size: 2rem;
+
+    &:hover,
+    &:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+      transform: easeOut;
+      transition: 0.6ms;
+      @include easeOut;
+    }
+  }
+}
+
+@keyframes modalOpen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
