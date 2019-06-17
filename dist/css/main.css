@@ -103,6 +103,32 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+@media (max-width: 900px) {
+  .menu .lg-heading,
+  .menu .sm-heading {
+    display: none; }
+  .menu-branding, .menu-nav {
+    width: 100vw; }
+  .menu-nav {
+    height: 30vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu .boxes {
+    margin-top: 35vh; }
+    .menu .boxes div {
+      padding: 0;
+      margin: 0;
+      border: none;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+  .menu-branding {
+    height: 70vh;
+    transform: translate3d(-100%, 0, 0); }
+    .menu-branding.show {
+      transform: translate3d(0, 0, 0); } }
+
 .modal {
   display: none;
   position: fixed;
